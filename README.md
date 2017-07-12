@@ -14,7 +14,7 @@ $ npm install
 
 there's not reload on save for now, will address that soon(ish)
 
-to start developing a simple
+to start developing please clone the repository and a simple
 
 `node index.js`
 
