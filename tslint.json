@@ -1,0 +1,177 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "semicolon": [
+            "ignore-bound-class-methods",
+            "ignore-interfaces",
+            true
+        ],
+        "quotemark": [
+            "double",
+            true
+        ],
+        "max-line-length": [
+            120,
+            true
+        ],
+        "new-parens": true,
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "class-name": true,
+        "curly": true,
+        "forin": true,
+        "align": [
+            "arguments",
+            "parameters",
+            "statements",
+            true
+        ],
+        "arrow-parens": false,
+        "indent": [
+            true,
+            2
+        ],
+        "jsdoc-format": true,
+        "interface-name": [
+            true,
+            "always-prefix"
+        ],
+        "no-angle-bracket-type-assertion": true,
+        "no-construct": true,
+        "no-duplicate-variable": true,
+        "no-empty": true,
+        "no-for-in-array": true,
+        "no-invalid-this": [
+            true,
+            "check-function-in-method"
+        ],
+        "no-console": [
+            "assert",
+            "count",
+            "debug",
+            "dirxml",
+            "log",
+            "profile",
+            "profileEnd",
+            "time",
+            "timeEnd",
+            "timeStamp",
+            "trace",
+            true
+        ],
+        "no-eval": true,
+        "no-unsafe-finally": true,
+        "no-unused-expression": [
+            "allow-fast-null-checks",
+            true
+        ],
+        "no-unused-new": true,
+        "no-unused-variable": [
+            true
+        ],
+        "no-debugger": true,
+        "no-var-keyword": true,
+        "no-var-requires": true,
+        "no-use-before-declare": true,
+        "ban": true,
+        "comment-format": [
+            "check-space",
+            "check-lowercase",
+            true
+        ],
+        "completed-docs": [
+            "functions",
+            "classes",
+            "methods",
+            true
+        ]
+    },
+    "jsRules": {
+        "semicolon": [
+            "never",
+            true
+        ],
+        "quotemark": [
+            "single",
+            true
+        ],
+        "max-line-length": [
+            120,
+            true
+        ],
+        "new-parens": true,
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "class-name": true,
+        "curly": true,
+        "forin": true,
+        "align": [
+            "arguments",
+            "parameters",
+            "statements",
+            true
+        ],
+        "arrow-parens": false,
+        "indent": [
+            true,
+            2
+        ],
+        "jsdoc-format": true,
+        "interface-name": [
+            true,
+            "always-prefix"
+        ],
+        "no-angle-bracket-type-assertion": true,
+        "no-construct": true,
+        "no-duplicate-variable": true,
+        "no-empty": true,
+        "no-for-in-array": true,
+        "no-invalid-this": [
+            true,
+            "check-function-in-method"
+        ],
+        "no-console": [
+            "assert",
+            "count",
+            "debug",
+            "dirxml",
+            "log",
+            "profile",
+            "profileEnd",
+            "time",
+            "timeEnd",
+            "timeStamp",
+            "trace",
+            true
+        ],
+        "no-eval": true,
+        "no-unsafe-finally": true,
+        "no-unused-expression": true,
+        "no-unused-new": true,
+        "no-unused-variable": [
+            true
+        ],
+        "no-debugger": true,
+        "no-var-keyword": true,
+        "no-var-requires": true,
+        "no-use-before-declare": true,
+        "ban": true,
+        "comment-format": [
+            "check-space",
+            "check-lowercase",
+            true
+        ],
+        "completed-docs": [
+            "functions",
+            "classes",
+            "methods",
+            true
+        ]
+    },
+    "rulesDirectory": []
+}
