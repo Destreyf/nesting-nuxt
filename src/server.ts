@@ -1,13 +1,14 @@
 import { NestFactory } from '@nestjs/core';
-import { ApplicationModule } from './modules/app.module';
 import * as Express from 'express';
-const Nuxt = require('nuxt');
+import { ApplicationModule } from './modules/app.module';
 
+// tslint:disable-next-line:no-var-requires
+const Nuxt = require('nuxt');
 
 async function start() {
   const instance = new Express();
   // Import and Set Nuxt.js options
-  let config = require('../nuxt.config');
+  const config = require('../nuxt.config');
   config.dev = !(instance.env === 'production');
   // Instanciate nuxt.js
   const nuxt = await new Nuxt(config);
