@@ -25,10 +25,11 @@
     "axios": "^0.16.2"
   },
   "devDependencies": {
-    "typescript": "^2.4.1",
     "@types/node": "^7.0.5",
-    "ts-node": "~3.2.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.1",
+    "ts-node": "~3.2.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
   }
 }
