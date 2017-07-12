@@ -12,7 +12,7 @@
 $ npm install
 ```
 
-there's reload on save for now, will address that soon(ish)
+there's not reload on save for now, will address that soon(ish)
 
 to start developing a simple
 
