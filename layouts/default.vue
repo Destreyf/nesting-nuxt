@@ -1,70 +1,42 @@
 <template>
-  <v-app dark toolbar footer>
-    <v-navigation-drawer persistent :mini-variant="miniVariant" :clipped="clipped" v-model="drawer">
-      <v-list>
-        <v-list-tile router v-for="(item, i) in items" :key="i" :to="item.to">
-          <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-toolbar fixed>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.native.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
-      </v-btn>
-      <v-btn icon @click.native.stop="clipped = !clipped">
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn icon @click.native.stop="fixed = !fixed">
-        <v-icon>remove</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon @click.native.stop="rightDrawer = !rightDrawer">
-        <v-icon>menu</v-icon>
-      </v-btn>
-    </v-toolbar>
-    <main>
-      <v-container fluid>
-        <nuxt />
-      </v-container>
-    </main>
-    <v-navigation-drawer temporary :right="right" v-model="rightDrawer">
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :fixed="fixed">
-      <span>&copy; 2017</span>
-    </v-footer>
-  </v-app>
+  <section class="container">
+  
+    <nav class="navbar ">
+      <div class="navbar-brand">
+        <a class="navbar-item" target="_blank" href="http://bulma.io">
+          <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="navMenuExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navMenuExample" class="navbar-menu">
+        <div class="navbar-start">
+          <nuxt-link class="navbar-item" to="/">
+            Index
+          </nuxt-link>
+          <nuxt-link class="navbar-item  is-active" to="/inspire">
+            Inspiration
+          </nuxt-link>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://github.com/AngelMunoz/nesting-nuxt" target="_blank">
+            Github
+          </a>
+        </div>
+      </div>
+    </nav>
+    <nuxt/>
+  </section>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Buefy.js'
     }
   }
 }

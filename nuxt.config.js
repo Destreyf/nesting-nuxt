@@ -22,10 +22,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vuetify', 'axios']
+    vendor: ['buefy', 'axios']
   },
-  plugins: ['~plugins/vuetify.js'],
+  plugins: ['~plugins/buefy.js'],
   css: [
-    { src: '~assets/style/app.styl', lang: 'styl' }
   ]
 }

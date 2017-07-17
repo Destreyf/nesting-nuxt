@@ -20,14 +20,12 @@
     "nuxt": "~1.0.0-alpha.5",
     "source-map-support": "^0.4.15",
     "cross-env": "^5.0.0",
-    "vue-server-renderer": "latest",
-    "vuetify": "^0.13.0",
+    "vue-server-renderer": "2.3.4",
+    "buefy": "0.4.5",
     "axios": "^0.16.2"
   },
   "devDependencies": {
     "@types/node": "^7.0.5",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "ts-node": "~3.2.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.1"
