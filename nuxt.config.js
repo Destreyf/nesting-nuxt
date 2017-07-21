@@ -22,8 +22,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vuetify', 'axios']
+    vendor: ['vuetify', 'axios'],
   },
+  modules: ['@nuxtjs/axios'],
   plugins: ['~plugins/vuetify.js'],
   css: [
     { src: '~assets/style/app.styl', lang: 'styl' }

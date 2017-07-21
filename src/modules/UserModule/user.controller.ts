@@ -3,7 +3,7 @@ import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Req, Res }
 import { Response } from "express";
 import { IUser, UserService } from "./utils";
 
-@Controller('users')
+@Controller('api/users')
 export class UserController {
   constructor(private $service: UserService) {
     /**
