@@ -12,9 +12,9 @@ async function start() {
   config.dev = !(instance.env === 'production');
   // Instanciate nuxt.js
   const nuxt = await new Nuxt(config);
-  instance.use(nuxt.render);
   const app = NestFactory.create(ApplicationModule, instance);
   app.listen(3000, () => console.log('Application is listening on port 3000.'));
+  instance.use(nuxt.render);
 }
 
 start();
