@@ -9,29 +9,29 @@
     "start:prod": "node dist/server.js"
   },
   "dependencies": {
-    "@nestjs/common": "*",
-    "@nestjs/core": "*",
-    "@nestjs/microservices": "*",
-    "@nestjs/testing": "*",
-    "@nestjs/websockets": "*",
-    "@nuxtjs/axios": "2.2.4",
+    "@nestjs/common": "4.1.0",
+    "@nestjs/core": "4.1.0",
+    "@nestjs/microservices": "4.1.0",
+    "@nestjs/testing": "4.1.0",
+    "@nestjs/websockets": "4.1.0",
+    "@nuxtjs/axios": "4.4.0",
     "axios": "0.16.2",
-    "body-parser": "^1.17.2",
-    "nuxt": "~1.0.0-alpha.5",
-    "redis": "~2.7.1",
-    "reflect-metadata": "~0.1.10",
-    "rxjs": "~5.4.0",
+    "body-parser": "1.18.2",
+    "nuxt": "^1.0.0-rc11",
+    "redis": "2.8.0",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.4.3",
     "vue": "2.3.4",
     "vue-server-renderer": "2.3.4",
     "vue-template-compiler": "2.3.4",
-    "vuetify": "~0.14.5"
+    "vuetify": "0.16.4"
   },
   "devDependencies": {
-    "@types/node": "~8.0.14",
-    "stylus": "~0.54.5",
-    "stylus-loader": "^3.0.1",
-    "ts-node": "~3.2.0",
-    "tslint": "~5.5.0",
-    "typescript": "~2.4.1"
+    "@types/node": "8.0.33",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.1",
+    "ts-node": "3.3.0",
+    "tslint": "5.7.0",
+    "typescript": "2.5.3"
   }
 }

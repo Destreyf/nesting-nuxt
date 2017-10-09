@@ -1,6 +1,6 @@
 <template>
-  <v-app dark toolbar footer>
-    <v-navigation-drawer persistent :mini-variant="miniVariant" :clipped="clipped" v-model="drawer">
+  <v-app dark>
+    <v-navigation-drawer app persistent :mini-variant="miniVariant" :clipped="clipped" v-model="drawer">
       <v-list>
         <v-list-tile router v-for="(item, i) in items" :key="i" :to="item.to">
           <v-list-tile-action>
@@ -12,7 +12,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed>
+    <v-toolbar app fixed>
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-btn icon @click.native.stop="miniVariant = !miniVariant">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
@@ -30,11 +30,13 @@
       </v-btn>
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <nuxt />
-      </v-container>
+      <v-content>
+        <v-container fluid>
+          <nuxt />
+        </v-container>
+      </v-content>
     </main>
-    <v-navigation-drawer temporary :right="right" v-model="rightDrawer">
+    <v-navigation-drawer app temporary :right="right" v-model="rightDrawer">
       <v-list>
         <v-list-tile @click.native="right = !right">
           <v-list-tile-action>
@@ -44,7 +46,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed">
+    <v-footer app :fixed="fixed">
       <span>&copy; 2017</span>
     </v-footer>
   </v-app>
