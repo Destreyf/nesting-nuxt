@@ -21,9 +21,6 @@
     "redis": "2.8.0",
     "reflect-metadata": "0.1.10",
     "rxjs": "5.4.3",
-    "vue": "2.3.4",
-    "vue-server-renderer": "2.3.4",
-    "vue-template-compiler": "2.3.4",
     "vuetify": "0.16.4"
   },
   "devDependencies": {
@@ -32,6 +29,7 @@
     "stylus-loader": "3.0.1",
     "ts-node": "3.3.0",
     "tslint": "5.7.0",
-    "typescript": "2.5.3"
+    "typescript": "2.5.3",
+    "vue-template-compiler": "^2.4.4"
   }
 }

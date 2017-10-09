@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer app persistent :mini-variant="miniVariant" :clipped="clipped" v-model="drawer">
+    <v-navigation-drawer app :mini-variant="miniVariant" :clipped="clipped" v-model="drawer">
       <v-list>
         <v-list-tile router v-for="(item, i) in items" :key="i" :to="item.to">
           <v-list-tile-action>
@@ -56,7 +56,7 @@
 export default {
   data() {
     return {
-      clipped: false,
+      clipped: true,
       drawer: true,
       fixed: false,
       items: [
@@ -64,7 +64,7 @@ export default {
         { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
         { icon: 'group', title: 'Users', to: '/users' }
       ],
-      miniVariant: false,
+      miniVariant: true,
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'

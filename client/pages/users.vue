@@ -4,9 +4,9 @@
       <v-subheader v-text="subtitle" dark></v-subheader>
       <v-list two-line>
         <template v-for="user in $store.state.users.list">
-          <v-subheader v-if="user.header" v-text="user.header"></v-subheader>
-          <v-divider v-else-if="user.divider" v-bind:inset="user.inset"></v-divider>
-          <v-list-tile avatar v-else v-bind:key="user.title" href="javascript:;" download target="_blank">
+          <v-subheader v-if="user.header" :key="user.id" v-text="user.header"></v-subheader>
+          <v-divider v-else-if="user.divider" :key="user.id" v-bind:inset="user.inset"></v-divider>
+          <v-list-tile avatar v-else v-bind:key="user.id" href="javascript:;" download target="_blank">
             <v-list-tile-avatar>
               <img v-bind:src="user.avatar">
             </v-list-tile-avatar>
